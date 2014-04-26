@@ -6,9 +6,20 @@ template outside another template.
 
 #### Usage
 
-<code>
+The first definition of a block will be the placeholder.
+```
 // application.hbs
 {{#block "name"}}
-
+  <span>Default application.hbs section</span>
 {{/block}}
-</code>
+```
+
+Any subsequent definitions will be replacements for the placeholder
+```
+// users/index.hbs
+{{#block "name"}}
+  <span>We override the "name" block inside application.hbs!</span>
+{{/block}}
+```
+
+More info about this coming soon!
