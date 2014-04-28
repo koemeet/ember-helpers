@@ -4,6 +4,8 @@
 This helper is equalivant to a block inside the Twig templating language. It it very useful if you want to alter a
 template outside another template.
 
+Example: http://jsbin.com/yepube
+
 #### Usage
 
 The first definition of a block will be the placeholder.
